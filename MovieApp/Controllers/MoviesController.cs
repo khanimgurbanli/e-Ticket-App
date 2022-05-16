@@ -119,8 +119,6 @@ namespace eTickets.Controllers
             return View(movieDetailById);
         }
 
-      
-
 
         public async Task<IActionResult> Delete(int id)
         {

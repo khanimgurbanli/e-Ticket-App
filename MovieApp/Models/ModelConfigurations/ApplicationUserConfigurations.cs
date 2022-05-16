@@ -11,7 +11,7 @@ namespace eTickets.Models.ModelConfigurations
     {
         public void Configure(EntityTypeBuilder<ApplicationUser> builder)
         {
-            builder.HasKey(x => x.FullName);
+           // builder.HasKey(x => x.FullName);
         }
     }
 }

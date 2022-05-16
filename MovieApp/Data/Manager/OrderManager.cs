@@ -19,9 +19,7 @@ namespace eTickets.Data.Manager
             var orders= await _context.Orders.Include(x => x.MovieOrders).ThenInclude(x => x.Movie).Include(x=>x.User).ToListAsync();
 
             if (userRole!= "Admin")
-            {
                 orders = orders.Where(o => o.UserId == userId).ToList();
-            }
             return orders;
         }
 
